@@ -15,13 +15,26 @@ rally.config(function($routeProvider){
 	.when('/campeonato', {
 		templateUrl : 'pages/campeonato.html',
 		controller : 'campeonatoController'
+	})
+	.otherwise({
+		redirectTo:'/'
 	});
 
 });
 
-rally.controller('rallyController', function($scope){
-	$scope.message = 'El mundo del rally';
-});
+rally.controller('rallyController', ['$scope', function($scope){
+	$scope.message = 'CAMPEONATO DE RALLY EN MÉXICO';
+
+	$scope.tab = 1;
+
+	$scope.setTab = function(newTab){
+		$scope.tab = newTab;
+	};
+
+	$scope.isSet = function(tabNum){
+			return $scope.tab === tabNum;
+	};
+}]);
 
 rally.controller('infoController', function($scope){
 	$scope.message = 'Info de rally mexico rally';
