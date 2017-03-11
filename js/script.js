@@ -22,7 +22,7 @@ rally.config(function($routeProvider){
 
 });
 
-rally.controller('rallyController', ['$scope', function($scope){
+rally.controller('rallyController', ['$scope', '$http', function($scope, $http){
 	$scope.message = 'CAMPEONATO DE RALLY EN MÉXICO';
 
 	$scope.tab = 1;
@@ -34,6 +34,10 @@ rally.controller('rallyController', ['$scope', function($scope){
 	$scope.isSet = function(tabNum){
 			return $scope.tab === tabNum;
 	};
+
+	$http({method: 'GET', url: 'js/data.json'}).success(function(data) {
+      $scope.equipos = data;
+    });
 }]);
 
 rally.controller('infoController', function($scope){

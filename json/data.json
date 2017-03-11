@@ -1,0 +1,54 @@
+[
+  {
+    "equipo": "CITROËN Total Abu Dhabi WRT",
+    "equipopais": "FRANCIA",
+    "anoequipo": 2000,
+    "pilotos": [
+      "CRAIG BREEN",
+      "STÉPHANE LEFEBVRE",
+      "KRIS MEEKE"
+    ],
+    "copilotos": [
+      "SCOTT MARTIN",
+      "GABIN MOREAU",
+      "PAUL NAGLE"
+    ],
+    "pilotospais": [
+      "IRLANDA",
+      "FRANCIA",
+      "INGLÉS"
+    ],
+    "copilotospais": [
+      "INGLÉS",
+      "FRANCIA",
+      "IRLANDA"
+    ],
+    "jefeequipo": "YVES MATTON"
+  },
+  {
+    "equipo": "Hyundai Motorsport",
+    "equipopais": "ALEMANIA",
+    "anoequipo": 2012,
+    "pilotos": [
+      "THIERRY NEUVILLE",
+      "HAYDEN PADDON",
+      "DANI SORDO"
+    ],
+    "copilotos": [
+      "NICOLAS GILSOUL",
+      "JOHN KENNARD",
+      "MARC MARTI"
+    ],
+    "pilotospais": [
+      "BÉLGICA",
+      "NUEVA ZELANDA",
+      "ESPAÑA"
+    ],
+    "copilotospais": [
+      "BÉLGICA",
+      "NUEVA ZELANDA",
+      "ESPAÑA"
+    ],
+    "jefeequipo": "MICHEL NANDAN"
+  }
+]
