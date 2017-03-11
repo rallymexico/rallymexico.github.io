@@ -35,9 +35,10 @@ rally.controller('rallyController', ['$scope', '$http', function($scope, $http){
 			return $scope.tab === tabNum;
 	};
 
-	$http({method: 'GET', url: 'js/data.json'}).success(function(data) {
-      $scope.equipos = data;
-    });
+	$http.get('js/data.json').success(function(data){
+		$scope.equipos = data;
+	});
+
 }]);
 
 rally.controller('infoController', function($scope){
